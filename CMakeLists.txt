@@ -9,8 +9,9 @@ if (POLICY CMP0141)
   set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
 endif()
 
-project ("Lab_11.2")
+project ("Lab_12i")
 file(GLOB SOURCE src/*.c)
 
 # Включите подпроекты.
 add_executable (${PROJECT_NAME} ${SOURCE})
+
